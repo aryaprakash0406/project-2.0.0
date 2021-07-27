@@ -1,0 +1,156 @@
+@media only screen and (max-width: 700px) {
+        .nav-menu {
+            position: fixed;
+            left: -100%;
+            top: 5rem;
+            flex-direction: column;
+            background-color: rgba(2, 5, 161, 0.91);
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            transition: 1s;
+            box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+            opacity: 1;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .nav-link{
+            color: rgb(255, 255, 255);
+            font-weight: 5px;
+        }
+        .nav-menu.active {
+            left: 0;
+        }
+    
+        .nav-item {
+            margin: 2.5rem 0;
+        }
+    
+        .hamburger {
+            display: block;
+            cursor: pointer;
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+    
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+    
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-3px) rotate(-45deg);
+        }
+
+
+         /* LANDING PAGE */
+    
+    .landing{
+        flex-direction: column-reverse;
+        height: 900px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        align-content: center;
+        width: 100%;
+    }
+    
+    .landingText h1{
+        font-size: 6vw;
+        margin: 0 !important;
+    }
+    
+    .landingText h3{
+        font-size: 16px;
+    }
+    
+    .landingImage img{
+        width: 52vw;
+        margin-bottom: 20px;
+    }
+
+    
+    
+
+
+
+        /* ABOUT>>>>>>>>>>>>>>>>>>>>>>>>>>>>>............................................>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+    
+        .about{
+            height: auto;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .aboutText{
+            padding: 0 50px;
+            height: 100px;
+        }
+        
+        .aboutText h1{
+            left: 40px;
+            font-size: 5vw;
+        }
+        
+        .aboutText img{
+            opacity: 0.3;
+            width: 16vw;
+            top: 10px;
+            left: -30px;
+        }
+        
+        .aboutList{
+            width: 75%;
+        }
+        
+        ol li{
+            font-size: 26px;
+        }
+        
+        li p{
+            font-size: 14px;
+        }
+    
+
+        /* APP BANNNER...............................>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    
+    .banner{
+        height: auto;
+        flex-direction: column-reverse;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .banner h1{
+        font-size: 6vw;
+    }
+    
+    .bannerInnerText{
+        font-size: 3vw;
+    }
+    
+    .bannerText img{
+        width: 20vw;
+    }
+    
+    .bannerImg img{
+        width: 26vw;
+    }
+    /* team....................<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    .auto-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

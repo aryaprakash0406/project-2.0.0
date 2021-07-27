@@ -1,0 +1,436 @@
+*{
+    margin: 0;;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(2, 5, 161, 0.91);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+}
+.logo_bar img{
+    height: 50px;
+    width: 58px;
+    padding: 5px;
+}
+.logo_bar{
+    display: flex;
+    flex-direction: row;
+    margin-left: 18px;
+}
+.nav-menu{
+    display: flex;
+    margin: auto;
+    list-style: none;
+}
+.nav-right{
+    display: flex;
+}
+.medicos{
+    display: flex;
+    align-items: center;
+    font: 2em sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'STIX Two Math', serif;
+}
+.nav-item{
+    font-size: 22px;
+    padding: 14px;
+}
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #fec400;
+    transition: 0.4s
+}
+
+.nav-item:hover::after {
+    width: 100%
+}
+.nav-link{
+    color: white;
+}
+.hamburger{
+    display:none;
+    margin: auto;
+}
+.bar {
+    display: block;
+    width: 22px;
+    height: 3px;
+    margin: 2px 8px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+  }
+
+/* landing page.......>>>>>>>>>>>>.............................................................>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  img.img-fluid {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+  }
+  @-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+  @keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+  
+  .landing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw 0 10vw;
+    height: 100vh;
+    background-color: rgba(2, 5, 161, 0.91);
+  }
+  
+  .landingText h1{
+    font-size: 6vw;
+    margin: 0;
+    color: #ffca28;
+    font-family: 'Old Standard TT', serif;
+    letter-spacing: 2px;
+  }
+  
+  .landingText h3{
+    margin: 6px;
+    font-size: 20px;
+    opacity: 0.3;
+    line-height: 30px;
+  }
+  
+  
+  .landingImage img{
+    width: 32vw;
+  }
+
+
+
+  /* ABOUT CSS ....................>....................................>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.about{
+    height: 600px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .aboutText{
+    position: relative;
+    padding: 0 50px;
+    height: inherit;
+  }
+  
+  .aboutText h1{
+    position: relative;
+    left: 110px;
+  }
+  
+  .aboutText img{
+    width: 10vw;
+    position: absolute;
+    top: 50px;
+  }
+  
+  .aboutList{
+    width: 50%;
+  }
+  
+  .aboutList ol{
+    list-style: none;
+    color: #e0501b;
+  }
+  
+  .aboutList ol li{
+    font-size: 34px;
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
+  }
+  
+  .aboutList li p{
+    font-size: 16px;
+    color: #000;
+    padding-left: 60px;
+    line-height: 30px;
+    border-radius: 11px;
+  }
+  
+  .aboutList ol li span{
+    position: absolute;
+    line-height: 37px;
+    font-weight: 600;
+    color: red;
+    padding-left: 10px;
+  }
+
+
+  /* Banner */
+
+.banner{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .bannerText h1{
+    font-size: 3vw;
+    color: #000;
+    font-weight: 600;
+  }
+  
+  .bannerText img{
+    width: 10vw;
+    margin-right: 20px;
+  }
+  
+  .bannerImg img{
+    width: 20vw;
+  }
+
+
+  /* countup...............>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. */
+  .count_up{
+    display: flex;
+    justify-content: center;
+    background: #f5f7ff;
+    width: 100%;
+    padding: 6rem 0;
+    font-weight: 700;
+    color: #303045;
+  }
+
+
+  .aboutus_page{
+    display: flex;
+    flex-direction: column;
+}
+.aboutus_page_heading{
+    margin: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-top: 20px;
+    color: #007bb5;
+}
+.aboutus_page_content{
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin: auto;
+    font-size: 29px;
+    margin-top: 56px;
+    margin-bottom: 69px;
+    text-align: center;
+}
+
+
+
+
+.auto-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+  .auto-grid li {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+    display: inline;
+  }
+  .team_members_heading{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+  }
+  .team_members{
+    color: #2636a9;
+    background-color: #f5f7ff;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .person1{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .person1 img{
+    border-radius: 187px;
+        width: 170px;
+  }
+  .person1_name{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+
+
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+  }
+input[type=email], select, textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+  }
+input[type=phone], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical 
+  }
+  input[type=submit] {
+    background-color: #3536b5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #b42424;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  .heading-contact-us{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+    padding: 12px;
+    font-size: 50px;
+    color: #007bb5;
+  }
+
+  
+  .count_up{
+    display: flex;
+    justify-content: center;
+    background: #f5f7ff;
+    width: 100%;
+    padding: 6rem 0;
+    font-weight: 700;
+    color: #303045;
+  }
+
+  .footer{
+    background-color: rgb(45, 43, 61);
+    color: white;
+    /* height: 300px; */
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 27px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  /* instagram */
+  .fa-instagram {
+    background: #125688;
+    color: white;
+    margin-right: 10px;
+  }
+  /* linkedin */
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    margin-right: 10px;
+  }
+  /* youtube */
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+    margin-right: 10px;
+  }
+  .social-handle{
+      display: flex;
+      justify-content: center;
+    flex-direction: row;
+    margin: 10px;
+}
+.followus{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+.address{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 27px;
+    font-family: sans-serif;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
